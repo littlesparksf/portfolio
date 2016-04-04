@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kimbe.appportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/button"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:elegantTextHeight="false"
+        android:enabled="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:backgroundTint="#f08d36"
+        android:onClick="displayToastSpotifyStreamer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/button2"
+        android:enabled="true"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:backgroundTint="#f08d36"
+        android:onClick="displayToastScores"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:backgroundTint="#f08d36"
+        android:onClick="displayToastLibrary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:backgroundTint="#ef8d36"
+        android:onClick="displayToastBuild"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignEnd="@+id/button4"
+        android:backgroundTint="#ef8d36"
+        android:onClick="displayToastXYZ"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone: My Own App"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:backgroundTint="#cd103f"
+        android:drawableTint="#ffffff"
+        android:textColor="#ffffff"
+        android:onClick="displayToastCapstone"/>
+
+
+</RelativeLayout>
